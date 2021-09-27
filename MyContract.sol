@@ -1,5 +1,10 @@
-pragma solidity >=0.7.0 < 0.9.0;
+pragma solidity ^0.4.0;
 
 contract MyContract {
-  string public myContract = "Hello World";
+  function externalCall() external returns (uint) {
+    return 123;
+  }
+  function publicCall() public returns (uint) {
+    return 123;
+  }
 }
